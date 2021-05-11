@@ -13,30 +13,31 @@ def calculate_cgpa(cgpa, chours, gpa, passed, outlier):
 
 def simulate(cgpa, chours, gpa, passed):
     if passed:
-        title = "cGPA vs. outliers if you did not PASS"
+        legend = "if you did not PASS"
+        color = "b"
     else:
-        title = "cGPA vs. outliers if you PASSed"
+        legend = "if you PASSed"
+        color = "g"
     plot(
         calculate_cgpa(cgpa, chours, gpa, passed, DISCRETE_OUTLIERS),
         calculate_cgpa(cgpa, chours, gpa, passed, OUTLIERS),
-        title,
+        color, legend,
     )
 
-def plot(discrete_cgpa, cgpa, title):
-    plt.scatter(DISCRETE_OUTLIERS, discrete_cgpa)
-    plt.plot(OUTLIERS, cgpa)
-    plt.xlim(LIM)
-    plt.ylim(LIM)
-    plt.xlabel("The grade you get in the future.")
-    plt.ylabel("Your new cGPA.")
-    plt.title(title)
+def plot(discrete_cgpa, cgpa, color, legend):
+    plt.scatter(DISCRETE_OUTLIERS, discrete_cgpa, c = color, label = legend)
+    plt.plot(OUTLIERS, cgpa, c = color)
 
 cgpa = float(input("cGPA: "))
 chours = float(input("Number of credit hours: "))
 gpa = float(input("Numerical grade you're thinking of PASSing: "))
 
-plt.figure(0)
 simulate(cgpa, chours, gpa, 0)
-plt.figure(1)
 simulate(cgpa, chours, gpa, 1)
+
+plt.xlim(LIM)
+plt.ylim(LIM)
+plt.xlabel("The grade you get in the future.")
+plt.ylabel("Your new cGPA.")
+plt.legend()
 plt.show()
