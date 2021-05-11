@@ -5,7 +5,7 @@ Visualization tool to help you decide if you should PASS a grade at Dalhousie Un
 
 ![alt text](https://github.com/harvey2phase/to-pass-or-not-to-pass/blob/main/demo.png)
 
-## Testing
+## Disclaimer
 
 I have not thoroughly tested the program. Please verify your results at [Dal's official GPA caculation site](https://www.dal.ca/campus_life/academic-support/grades-and-student-records/gpa-calculator.html).
 
