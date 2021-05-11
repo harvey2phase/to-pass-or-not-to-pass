@@ -5,7 +5,7 @@ Visualization tool to help *you* decide if you should PASS a grade at Dalhousie 
 
 Enter your current cGPA, the number of hours counting towards that cGPA (should be a multiple of 3 and a maximum of 120 for a 4-year bachelor's degree), and the numerical grade (between 0 and 4.3) that you're thinking of passing. The resulting plot shows how your cGPA would then change if you took another course in the future without the PASSing option.
 
-Caution: There is no error checking for input correctness.
+*Caution: There is no error checking for input correctness.*
 
 ### Interpretation
 
