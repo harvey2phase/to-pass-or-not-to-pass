@@ -11,6 +11,6 @@ I have not thoroughly tested the program. Please verify your results at [Dal's o
 
 You can also play with the [Desmos plot](https://www.desmos.com/calculator/tz9tp81hqi) that I used to calculate the projected GPAs.
 
-Message me on Discord or email me at harvey@dal.ca if you found any errors.
+Message me on Discord or email me at harvey@dal.ca if you found any errors or have any questions.
 
 Thank you!! Enjoy!
